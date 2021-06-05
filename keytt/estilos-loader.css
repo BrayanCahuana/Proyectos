@@ -1,0 +1,56 @@
+#loader{
+    position: fixed;
+    margin: 10%;
+    padding: 30% 0;
+    justify-content: center;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: black;
+    opacity: 50%;
+}
+.barra1{
+    background-color: goldenrod;
+    height: 10px;
+    animation: barra1 2s alternate infinite;
+    margin: 0;
+    width: 20px;
+    border-radius: 15%;
+}
+@keyframes barra1 {
+    0% {transform: scaleY(0);}
+    50% {transform: scaleY(2.5);}
+    100% {transform: scaleY(0);}
+}
+.barra2{
+    background-color: goldenrod;
+    height: 10px;
+    animation: barra2 2s alternate  infinite;
+    margin: 0 1%;
+    width: 20px;
+    animation-delay: 0.5s;
+    border-radius: 15%;
+}
+@keyframes barra2 {
+    0% {transform: scaleY(0);}
+    50% {transform: scaleY(3);}
+    100% {transform: scaleY(0);}
+}
+.barra3{
+    background-color: goldenrod;
+    height: 10px;
+    animation: barra3 2s alternate infinite;
+    margin: 0;
+    width: 20px;
+    animation-delay: 1.0s;
+    border-radius: 15%;
+}
+@keyframes barra3 {
+    0% {transform: scaleY(0);}
+    50% {transform: scaleY(2.5);}
+    100% {transform: scaleY(0);}
+}
+

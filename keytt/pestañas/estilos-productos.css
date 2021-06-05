@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam:wght@100&family=Bebas+Neue&display=swap');
+
+.fondo-todos-mis-prductos{
+    background-image: url("https://images.pexels.com/photos/5788488/pexels-photo-5788488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.fondo-todos-mis-prductos h1{
+    font-family: Anton;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 110px;
+    margin-bottom: 0;
+}
+.fondo-todos-mis-prductos h3{
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: rgba(244, 244, 244, 0.74);
+    margin-top:0 ;
+}
+
+.fondo-lista-de-productos{
+    background-color: rgb(12, 13, 15);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2%;
+    justify-content: center;
+    overflow: hidden;
+}
+.tarjetas{
+    background-image: url("https://images.pexels.com/photos/5704188/pexels-photo-5704188.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-color: rgb(24, 28, 34);
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 2%;
+}
+
+#tarjetas-info{
+    position: absolute;
+    overflow: hidden;
+    background-color: rgb(148, 38, 38);
+    width: 100%;
+    animation: informacion 1.5s forwards;
+}
+@keyframes informacion {
+    0% {opacity: 0;}
+    100% {opacity: 100%;}
+}
+#tarjetas-info:hover{
+    bottom: 0px;
+    transition: all 1s;
+}
+#tarjetas-info:not(:hover){
+    bottom: -225px;
+    transition: all 1s;
+}
+.tarjetas h2{
+    font-family: Anton;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    margin: 0;
+    width: 100%;
+}
+.tarjetas h3 {
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    margin: 0;
+    width: 100%;
+}
+.tarjetas ul{
+    list-style: none;
+    text-align: justify;
+    padding: 0 5%;
+}
+.tarjetas li {
+    font-size: 20px;
+}
+#pedir-ahora{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f2fbfb;
+    text-align: center;
+    width: 90%;
+    padding: 5%;
+    margin-top: 2%;
+}
+.tarjetas a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.redes-sociales{
+    text-align: center;
+    padding: 1% 0;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+.redes-sociales img{
+    width: 80px;
+    height: 80px;
+    padding: 1%;
+}
+.redes-sociales img:hover {
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+@media (max-width:700px) {
+    .fondo-todos-mis-prductos h1{
+        font-size: 70px;
+    }
+    .fondo-todos-mis-prductos h3 {
+        font-size: 30px;
+    }
+}
+
+
+
+
