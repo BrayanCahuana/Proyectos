@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
     padding: 0;
     margin: 0;
@@ -9,7 +9,7 @@ button a{
 }
 nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0));
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1.5px);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -19,7 +19,7 @@ nav {
     justify-content:space-between;
     font-size: 20px;
     padding: 1% 0;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     z-index: 2;
 }
 #direcciones{
@@ -84,6 +84,11 @@ nav label img{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    animation: yosoy normal 2s;
+}
+@keyframes yosoy {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
 }
 #descripcion{
     margin: 0 5%;
@@ -94,13 +99,17 @@ nav label img{
 }
 #imagen img{
     width: 500px;
+    transform: scaleX(-1);
+}
+#imagen img:hover{
+    filter: drop-shadow(0px 0px 10px #294b5c);
 }
 #seccion-me {
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.719));
     text-align: center;
     padding: 10% 0;
     color: white;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     top: 0;
     right: 0;
     left: 0;
@@ -140,10 +149,10 @@ nav label img{
 }
 
 #servicios {
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(21, 22, 24); 
     text-align: center;
     color: white;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 4%;
 }
 #servicios h2{
@@ -161,7 +170,6 @@ nav label img{
 }
 #front-end{
     margin: 10px 5%;
-    background-color: rgba(12, 12, 14, 0.911);
     padding: 4% 5%;
     border-radius: 5px;
 } 
@@ -172,7 +180,6 @@ nav label img{
 }
 #back-end{
     margin: 10px 5%;
-    background-color: rgba(12, 12, 14, 0.911);
     padding: 4% 5%;
     border-radius: 5px;
 }
@@ -182,13 +189,81 @@ nav label img{
     margin:10px
 }
 
+#conocimientos{
+    background-color: rgb(21, 22, 24);
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    padding: 4%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#conocimientos h2{
+    padding: 2% 0;
+    margin: 0;
+    font-size: 18px;
+}
+#niveles{
+    width: 90%;
+    padding: 0 5%;
+}
+#barras{
+    height: 30px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 0px #2539447e;
+}
+#dominio-html,#dominio-css,#dominio-js,#dominio-reactjs{
+    height: 100%;
+    background-color: rgb(42, 106, 179);
+    border-radius: 5px;
+    animation: barra normal 3s;
+}
+@keyframes barra {
+    0%{width: 0%;};
+    100%{width: 100%;}
+}
+#dominio-html{
+    width: 80%;
+}
+#dominio-css{
+    width: 70%;
+}
+#dominio-js{
+    width: 35%;
+}
+#dominio-reactjs{
+    width: 40%;
+}
+#dominio-html:hover{
+    transition: 0.5s;
+    background-color: #3483c4;
+}
+#dominio-css:hover{
+    transition: 0.5s;
+    background-color: #3483c4;
+}
+#dominio-js:hover{
+    transition: 0.5;
+    background-color: #3483c4;
+}
+#dominio-reactjs:hover{
+    transition: 0.5;
+    background-color: #3483c4;
+}
+#dominio-html,#dominio-css,#dominio-js:not(:hover){
+    transition: 1s;
+}
+
 #portafolio {
     background-image: linear-gradient(rgb(0, 0, 0),rgba(10, 10, 10, 0.61)),url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 5% 2%;
     text-align: center;
@@ -215,12 +290,13 @@ nav label img{
 }
 #portafolio button:hover{
     transition: all 0.5s;
-    background-color: #d3d3d31e;
-    filter: drop-shadow(0px 0px 30px #8a34c4);
+    background-color: #d3d3d3;
+    filter: drop-shadow(0px 0px 30px #517f99);
+    color: #222727;
 }
 
 #certificados{
-    background-color: black;
+    background-color: rgb(21, 22, 24); 
     padding: 5% 4%;
     display: flex;
     flex-direction: row;
@@ -246,15 +322,11 @@ nav label img{
 }
 
 #proyectos{
-    background-image: linear-gradient(black,rgba(0, 0, 0, 0.678)),url("https://images.pexels.com/photos/2646237/pexels-photo-2646237.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(21, 22, 24); 
     padding: 2%;
     color: white;
     text-align: center;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 #paginas{
     display: flex;
@@ -273,20 +345,20 @@ nav label img{
     filter: drop-shadow(0px 0px 10px #273f4b);
 }
 #todas-redes {
-    background-color: #070808;
-    padding: 4% 0;
+    background-color: rgb(21, 22, 24); 
+    padding: 3% 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 #todas-redes img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     filter: invert(100%);
 }
 #todas-redes img:hover {
     filter: drop-shadow(0px 0px 3px rgb(85, 101, 138));
-    transition: all 1.5s ease;
+    transition: all 1.5s;
 }
 #todas-redes a{
     margin: 0 2%;
@@ -316,7 +388,7 @@ iframe {
     color: white;
     padding: 2% 0;
     text-align: center;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 #formulario h2{
     margin: 0;
@@ -339,13 +411,17 @@ input {
     border-bottom: 2px solid #222727;
     margin-bottom: 2%;
 }
+input:focus{
+    transition: 1s;
+    border-bottom: 2px solid #bed6d6;
+}
 form button{
     font-size: 25px;
     margin: 5%;
     padding: 1% 5%;
     background-color: white;
     color: #273f4b;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     border-radius: 5px;
     border-style: none;
@@ -376,10 +452,10 @@ form p{
 }
 
 footer{
-    background-color: rgba(0, 0, 0, 0.979);
+    background-color: rgb(21, 22, 24); 
     color: rgba(231, 231, 231, 0.89);
     text-align: center;
-    font-family: 'Mina', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-style:inherit;
     padding: 10px 5px;
 }
@@ -397,17 +473,12 @@ footer{
         display: block;
     }
     nav #direcciones{
-        top: 48px;
+        top: 99%;
+        z-index: -1;
         position: absolute;
-        display:flex;
+        display:none;
         flex-direction: column;
         background-color: rgba(28, 36, 36, 0.972);
-        justify-content: center;
-        text-align: left;
-        align-self: center;
-        align-items: center;
-        align-content: center;
-        align-tracks: center;
     }
     #redes-sociales,#despegable{
         width: 50%;
@@ -417,7 +488,8 @@ footer{
         float: right;
     }
     nav #direcciones a{
-        text-align: center;
+        text-align: justify;
+        margin: 5% 5%;
     }
 
     #direcciones{
@@ -440,6 +512,9 @@ footer{
     #imagen img{
         width: 250px;
     }
+    #servicios{
+        padding: 7%;
+    }
     #servicios img {
         width: 80px;
         height: 80px;
@@ -447,17 +522,21 @@ footer{
     #servicios #lenguajes{
         flex-wrap: wrap;
     }
+    #front-end,#back-end{
+        padding: 0;
+        margin: 4% 0;
+    }
     #certificados img{
         width: 100%;
-        height: 60%;
-    }
-    #certificados a{
-        width: 90%;
         height: 50%;
     }
+    #certificados a{
+        width: 80%;
+        height: 40%;
+    }
     #paginas img{
-        width: 90%;
-        height: 70%;
+        width: 70%;
+        height: 80%;
     }
     #portafolio {
         padding: 10%;
@@ -466,17 +545,20 @@ footer{
         font-size: 30px;
     }
     #todas-redes a{
-        margin: 25px 50px ;
+        margin: 25px 10px ;
     }
     #todas-redes img{
-        width: 40px;
-        height: 40px;
+        width: 25px;
+        height: 25px;
     }
-    form, #informacion,#contacto {
+    #informacion,#contacto {
         width: 100%;
     }
+    form{
+        width: 85%;
+    }
     iframe {
-        width: 60%;
+        width: 75%;
         margin-bottom: 10%;
     }
 }

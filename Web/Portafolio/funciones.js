@@ -6,13 +6,15 @@
         let barNav = document.getElementById('nav')
         if (menu.checked == true){
             direcciones.style.transition = '1s'
-            direcciones.style.transform = 'translateX(100%)'
+            direcciones.style.transform = 'translateY(-140%)'
+            direcciones.style.display = 'flex'
             barNav.style.backgroundColor = 'rgba(0, 0, 0, 0.137)'
+            
 
         }
         else{
             direcciones.style.transition = '1s'
-            direcciones.style.transform = 'translateX(0%)'
+            direcciones.style.transform = 'translateY(0%)'
             barNav.style.transition = '1s'
             barNav.style.backgroundColor = 'rgba(28, 36, 36, 0.972)'
         }
