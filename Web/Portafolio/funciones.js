@@ -20,7 +20,45 @@
         }
     
     }
-//codigo para el envio del formulario
-    function enviarMensaje () {
-        alert("Los mensajes no se podran enviar por el momento, no cuento con servidor habilitado. Contactame por redes mis redes sociales!!")
+
+
+    //popup
+    function abrirpop () {
+        abrir = document.getElementById('enviar')
+        popimagen = document.getElementById('popup')
+
+        abrir.addEventListener('click',() => {
+            popimagen.style.display = 'flex'
+        })
     }
+
+    //cerrar popup
+    function pop (){
+        cerrar = document.getElementById('close')
+        popup = document.getElementById('popup')
+        cerrar.addEventListener('click',() => {
+            popup.style.display = 'none'
+        })
+}
+
+//botones flechas
+function flechas () {
+    selecion = document.getElementById('selecion')
+    izquierda = document.getElementById('izquierdo')
+    centro = document.getElementById('centro')
+    derecha = document.getElementById('derecho')
+    
+    izquierda.addEventListener('click',() => {
+            selecion.style.transform = 'translateX(85%)'
+            selecion.style.transition = '1s'
+        })
+        
+    centro.addEventListener('click',() => {
+            selecion.style.transform = 'translateX(0%)'
+            selecion.style.transition = '1s'
+        })
+    derecha.addEventListener('click',() => {
+            selecion.style.transform = 'translateX(-85%)'
+            selecion.style.transition = '1s'
+        })
+}
