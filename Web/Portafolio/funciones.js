@@ -9,8 +9,6 @@
             direcciones.style.transform = 'translateY(-140%)'
             direcciones.style.display = 'flex'
             barNav.style.backgroundColor = 'rgba(0, 0, 0, 0.137)'
-            
-
         }
         else{
             direcciones.style.transition = '1s'

@@ -1,0 +1,39 @@
+#mapa{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0;
+}
+#lugar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.353),rgba(31, 24, 14, 0.178)),url("https://scontent-lim1-1.xx.fbcdn.net/v/t1.6435-9/79369552_2786255811435393_3924090290100502528_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=e3f864&_nc_ohc=urJnnoIcJisAX_k_Id_&_nc_ht=scontent-lim1-1.xx&oh=1dce3b0d8f8380ce7e8c8c6451c38a4a&oe=60DBB47B");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5vh;
+    color: white;
+    height:70vh;
+}
+#lugar h1{
+    font-size: 60px;
+    margin: 0;
+}
+#lugar p{
+    font-size: 30px;
+}
+iframe{
+    width: 80%;
+    height: 60vh;
+}
+
+@media (max-width:800px){
+    #lugar h1{
+        font-size: 40px;
+    }
+    #lugar p{
+        font-size:25px;
+    }
+}

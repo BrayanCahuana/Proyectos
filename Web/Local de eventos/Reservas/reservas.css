@@ -1,0 +1,120 @@
+/* ---------RESERVAS-------------------------------------------------------------------- */
+#reservas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.568),rgba(17, 17, 17, 0.603)),url("https://images.pexels.com/photos/175765/pexels-photo-175765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height:60vh;
+    padding-inline: 1vh;
+}
+#reservas h1{
+    font-weight: bold;
+    font-size: 80px;
+    margin: 0;
+}
+#reservas h3{
+    font-size: 20px;
+    font-weight: 100;
+    line-height:35px;
+}
+
+/* ---------TIPOS DE EVENTOS-------------------------------------------------------------------- */
+#tipos-evento{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3vh 1.5vh;
+}
+#eventos{
+    margin: 2vh;
+    width: 350px;
+    line-height: 25px;
+}
+#eventos img{
+    width: 100%;
+    height: 25vh;
+}
+
+/* ---------PLANES PARA RESERVAR-------------------------------------------------------------------- */
+#precios{
+    text-align: center;
+    padding: 0vh 2vh;
+}
+#precios p{
+    line-height:25px;
+}
+#planes-pedidos{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+}
+#plan {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
+    width: 300px;
+    padding: 1%;
+    margin: 2vh;
+}
+#plan svg{
+    height: 5vh;
+}
+#plan li {
+    text-align: justify;
+    list-style:circle;
+}
+#plan:hover{
+    transition: 1s;
+    transform: scale(1.05);
+}
+
+/* ---------CONTACTO PARA RESERVAR-------------------------------------------------------------------- */
+#contacto-para-reserva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4vh 3vh;
+}
+#contacto-para-reserva h2{
+    font-size: 40px;
+}
+#contacto-para-reserva a{
+    font-size: 30px;
+    text-decoration: none;
+    align-self: center;
+    color: rgb(149, 10, 10);
+    border-style: dashed;
+    border: 3px solid rgb(184, 9, 9);
+    width: 40vh;
+    margin: 0 5vh;
+    padding: 1vh;
+    border-radius: 50px
+}
+#contacto-para-reserva a:hover{
+    transition: 0.5s;
+    background-color: rgb(184, 9, 9);
+    color: white;
+}
+#contacto-para-reserva a:not(:hover){
+    transition: 1s;
+}
+
+@media (max-width: 800px){
+    /* ---------RESERVAS----------------------- */
+    #reservas h1{
+        font-size: 45px;
+    }
+    /* ---------CONTACTO PARA RESERVA----------------------- */
+    #contacto-para-reserva h2{
+        font-size: 30px;
+    }
+}
