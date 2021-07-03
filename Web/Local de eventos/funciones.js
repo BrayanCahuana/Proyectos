@@ -1,4 +1,11 @@
 
+// preloader(pantalla de carga)
+window.onload = function() {
+    spinner = document.getElementById('preloader')
+    spinner.style.opacity = '0'
+}
+
+
 // navbar efecto scroll
 let PosicionPrincipal = window.pageYOffset
 window.onscroll = function (){
@@ -23,8 +30,6 @@ window.onscroll = function (){
 }
 
 
-
-alert("Pagina En Desarrollo ( No Habilitada )")
 
 
 
