@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: 'Fira Sans', sans-serif;
 }
+/* ---------HR BLANCO Y NEGRO-------------------------------------------------------------------- */
 #hrwhite{
     width: 8vh;
     height:0.3vh;
@@ -13,6 +14,12 @@ body{
     width: 8vh;
     height:0.3vh;
     background-color: black;
+}
+
+/* ---------SCROLL EFECTO-------------------------------------------------------------------- */
+.scrollmostrar{
+    transition: 1.5s all;
+    opacity: 0%;
 }
 
 /* ---------SCROLL DERECHO-------------------------------------------------------------------- */
@@ -34,7 +41,7 @@ body::-webkit-scrollbar-thumb{
     display:flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 1;
     transition: all 3s;
 }
 #preloader p{
@@ -92,7 +99,7 @@ nav img{
 
 /* ---------PRINCIPAL-------------------------------------------------------------------- */
 #principal{
-    background-image: linear-gradient(rgba(93, 80, 64, 0.377),rgba(34, 22, 22, 0.274)), url("./Assets/LocalDia.png");
+    background-image: linear-gradient(rgba(93, 80, 64, 0.377),rgba(34, 22, 22, 0.274)), url("./Assets/LocalDecoradoMorado.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +124,8 @@ nav img{
 
 /* ---------Decripcion-------------------------------------------------------------------- */
 #descripcion{
-    padding: 20vh 5%;
+    padding-inline:5%;
+    padding-top: 18vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -131,12 +139,32 @@ nav img{
     line-height: 25px;
     margin-inline: 2vh;
     text-align: justify;
-    color: rgb(14, 27, 100);
+    color: rgb(88, 94, 104);
+}
+
+/* ---------VIDEOS DE MUESTRA-------------------------------------------------------------------- */
+#videos-muestra{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    padding: 15vh 2vh;
+}
+#video{
+    margin: 1vh 5vh;
+    text-align: center;
+}
+#video video{
+    width: 36vh;
+    height:65.5vh;
+    box-shadow: 0px 1px 15px rgb(27, 25, 10);
+    border-radius: 15px;
+    background-color: black;
 }
 
 /* ---------Informacion-------------------------------------------------------------------- */
 #informacion{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.472),rgba(240, 172, 84, 0.158)),url("https://images.pexels.com/photos/1488312/pexels-photo-1488312.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: linear-gradient(rgba(13, 17, 20, 0.616),rgba(44, 29, 63, 0.363)),url("https://www.lavanguardia.com/files/og_thumbnail/uploads/2020/11/18/5fbb94393812d.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,6 +235,10 @@ nav img{
     text-align:start;
     line-height: 25px;
 }
+#servicio p{
+    color: rgb(88, 94, 104);
+}
+
 /*MAPA---------------------------------------------------*/
 iframe{
     height:50vh
@@ -223,6 +255,7 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    opacity:90%;
 }
 #contenido{
     margin: 0 5vh;

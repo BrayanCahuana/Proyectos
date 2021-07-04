@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="../Assets/Negro y Rosa Neón Club Logotipo.png"/>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./reservas.css">
     <title>Reservacion</title>
 </head>
 <body>
+    <div id="preloader">
+        <p>EL LUGAR PERFECTO</p>
+    </div>
     <header>
         <nav id="nav">
             <div id="logo">
-                <a href=""><img src="https://image.flaticon.com/icons/png/512/685/685173.png"></a>
+                <a><img src="https://image.flaticon.com/icons/png/512/685/685173.png"></a>
             </div>
             <div id="enlaces">
                 <a href="../index.html">Inicio</a>
                 <a href="">Servicios</a>
                 <a href="../Reservas/reservas.html">Reservas</a>
                 <a href="../Ubicacion/ubicacion.html">Ubicacion</a>
-                <a href=""><img src="https://image.flaticon.com/icons/png/512/20/20837.png"></a>
+                <a id="redesf"href="https://www.facebook.com/Local-de-eventos-El-lugar-perfecto-2266262450101401"><img src="https://image.flaticon.com/icons/png/512/20/20837.png"></a>
+                <a id="redesw"href="https://api.whatsapp.com/send?phone=+51944235027&text=Hola,%20deseo%20hacer%20una%20reserva"><img src="https://image.flaticon.com/icons/png/512/1384/1384023.png"></a>
             </div>
             <input type="checkbox" id="menu" onclick="menuHamburguesa()">
             <label for="menu" id="menu-icono" onclick="menuHamburguesa()">≡</label>
@@ -28,32 +33,34 @@
 <main>
     <div id="reservas">
         <h1>Reservas</h1>
+        <hr id="hrwhite">
         <h3>Aceptamos reservas con un tiempo de anticipacion</h3>
     </div>
     <div id="tipos-evento">
         <div id="eventos">
-            <img src="https://images.pexels.com/photos/1154189/pexels-photo-1154189.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <img src="https://i.ytimg.com/vi/FUndmyhD2I4/maxresdefault.jpg">
             <h2>QUINCE AÑOS</h2>
             <p>El paso de la niñez a la pubertad se celebra con una fiesta de "Quince años", generalemtne se celebra con un baile lleno de fantasia,se caracteriza por el baile de vals, el cambio de zapatos y la diversion en la que se celebra.</p>
         </div>
         <div id="eventos">
-            <img src="https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+            <img src="https://img.lalr.co/cms/2021/01/29200506/biosegurdiad.jpg?size=xl">
             <h2>BODAS</h2>
             <p>Un momento unico con nuestra pareja, el momento del <b>Matrimonio</b> es un gran paso para el vinculo de pareja. Nuestro local es perfecto para estas ocasiones</p>
         </div>
         <div id="eventos">
-            <img src="https://i.ytimg.com/vi/FUndmyhD2I4/maxresdefault.jpg">
+            <img src="https://storage.alboom.ninja/sites/9595/albuns/349307/partty_033.jpg?t=1542396160">
             <h2>BAILES DE PROMOCIÓN</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus rem totam dolores eos asperiores natus quae voluptatibus eius veritatis id</p>
+            <p>¿Tu tiempo escolar ya termino? Ven y vive a lo grande con tus amigos en una noche inolvidable</p>
         </div>
         <div id="eventos">
-            <img src="https://i.ytimg.com/vi/-wavM6kuxlY/maxresdefault.jpg">
+            <img src="https://i.pinimg.com/originals/0b/bc/ab/0bbcab4a9ef68429911115523d39ff28.jpg">
             <h2>OTROS EVENTOS</h2>
             <p>Apesar que hay muchos mas eventos, usted es libre de escoger algun otro evento que no esta en la lista</p>
         </div>
     </div>
     <div id="precios">
         <h2>PRECIOS</h2>
+        <hr id="hrblack">
         <p>Los precios son de acuerdo a los servicios que usted requiera para su fiesta, pero te presentamos los mas pedidos</p>
         <div id="planes-pedidos">
             <div id="plan">
@@ -101,6 +108,7 @@
     </div>
     <div id="contacto-para-reserva">
         <h2>¡llamanos para pedir tu reserva!</h2>
+        <hr id="hrblack">
         <a href="tel:+51944235027">📞 | +51 944235027</a>
     </div>
 </main>

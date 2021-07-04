@@ -47,6 +47,9 @@
     text-align: center;
     padding: 0vh 2vh;
 }
+#precios h2{
+    font-size: 30px;
+}
 #precios p{
     line-height:25px;
 }
@@ -58,8 +61,6 @@
     padding: 0;
 }
 #plan {
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
     width: 300px;
     padding: 1%;
     margin: 2vh;
@@ -74,6 +75,8 @@
 #plan:hover{
     transition: 1s;
     transform: scale(1.05);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.281);
 }
 
 /* ---------CONTACTO PARA RESERVAR-------------------------------------------------------------------- */
